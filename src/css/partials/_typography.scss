@@ -1,0 +1,122 @@
+html,
+body {
+	font: {
+		size: 10px;
+		family: 'Gafata', serif;
+	}
+	line-height: 1.25em;
+}
+
+body {
+	font-size: 2em;
+	font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin-bottom: .2em;
+	line-height: 1em;
+	font-family: 'Ruda', sans-serif;
+}
+
+h1 {
+	font-size: 2.5em;
+	color: $primary;
+	@include transition(all .3s);
+
+	a &:hover, a:hover & {
+		color: $secondary;
+	}
+}
+
+h2 {
+	font-size: 2em;
+	color: $secondary;
+}
+
+h3 {
+	font-size: 1.5em;
+	color: lighten($primary, 20%);
+}
+
+h4 {
+	font: {
+		size: 1.25em;
+		weight: bold;
+	}
+	color: lighten($secondary, 10%);
+}
+
+h5 {
+	font-weight: bold;
+}
+
+p {
+	margin-bottom: 2em;
+}
+
+blockquote {
+	border-left: 2px solid #ccc;
+	padding: 1em 0 1em 1em;
+	margin: 1em 0 2em;
+}
+
+code,
+pre {
+	padding: 1em;
+	margin-bottom: 2em;
+	line-height: 1.5em;
+}
+
+a {
+	color: $secondary;
+	text-decoration: none;
+	@include transition(all .3s);
+
+	&:hover {
+		color: darken($primary, 10%);
+	}
+}
+
+//Lists
+ul,
+li {
+	margin-bottom: 2em;
+}
+
+li {
+	margin-bottom: .25em;
+}
+
+ol {
+	li {
+		margin-left: 1em;
+	}
+}
+
+//Tags
+.tags {
+	margin-bottom: 1em;
+}
+.tags a,
+.tag {
+	background: lighten($secondary, 30%);
+	padding: .1em .2em;
+	margin: 0 .25em .4em 0;
+	display: inline-block;
+
+	&:hover {
+		background: $secondary;
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.view-project {
+	@extend h5;
+	display: block;
+	margin-bottom: 2em;
+}

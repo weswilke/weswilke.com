@@ -1,0 +1,11 @@
+.btn {
+
+	display: inline-block;
+	padding: .25em .5em;
+	background: $secondary;
+	color: #fff;
+
+	&.contact {
+		padding: .5em 1em;
+	}
+}

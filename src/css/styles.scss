@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@import "compass/css3",
+		"compass/css3/filter",
+		"compass/utilities/general/clearfix";
+
+@import "modules/**/*";
+@import "partials/**/*";
+
+
+body {
+
+}
+
+img {
+	max-width: 100%;
+}
+
+.circle {
+	@include border-radius(50% 50%);
+}
+
+
+//Homepage
+.header-info {
+	text-align: center;
+	margin-bottom: 4em;
+	padding-top: 2em;
+
+	img {
+		margin-bottom: 1em;
+	}
+}
+
+.project-info {
+	margin-bottom: 1em;
+
+	img {
+		position: relative;
+	}
+}
+
+.project-thumb {
+	position: relative;
+	margin: 0 0 1em 1em;
+	float: right;
+	width: 100%;
+	max-width: 350px;
+	max-height: 300px;
+
+	&::after {
+		content: "View Project";
+		width: 150px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -75px;
+		margin-top: 0px;
+		display: inline-block;
+		text-align: center;
+		background: $secondary;
+		color: #fff;
+		padding: .5em;
+
+		//Transition
+		opacity: 0;
+
+		@include transition(all .3s);
+	}
+
+	&:hover::after {
+		opacity: 1;
+		margin-top: -20px;
+	}
+}
+
+
+//About
+#about {
+	position: relative;
+	padding: 4em 0;
+	margin-bottom: 4em;
+	overflow: hidden;
+
+	&::after {
+		width: 110%;
+		height: 110%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: "";
+		opacity: .7;
+		background: url('../images/bg-santorini.jpg') center center no-repeat;
+		z-index: -1;
+		@include background-size(cover);
+		@include filter(blur(3px));
+	}
+}

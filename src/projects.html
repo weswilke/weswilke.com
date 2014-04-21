@@ -1,0 +1,156 @@
+<!doctype html>
+<!--[if IE 7]> <html lang="en" class="lt-ie9 lt-ie8 no-js"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="lt-ie9 no-js"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css({.tmp,src}) css/styles.css -->
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- endbuild -->
+        <link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Ruda:900' rel='stylesheet' type='text/css'>
+        <!-- build:js js/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=desert"></script>
+        <script>
+        /* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
+        window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!!t.document.createElementNS&&!!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect&&!!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1"),A=function(A){var o=t.document.createElement("link"),r=t.document.getElementsByTagName("script")[0];o.rel="stylesheet",o.href=e[A&&n?0:A?1:2],r.parentNode.insertBefore(o,r)},o=new t.Image;o.onerror=function(){A(!1)},o.onload=function(){A(1===o.width&&1===o.height)},o.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+        grunticon( [ "images/svg-build/icons.data.svg.css", "images/svg-build/icons.data.png.css", "images/svg-build/icons.fallback.css" ] );</script>
+        <noscript><link rel="stylesheet" href="images/svg-build/icons.fallback.css"></noscript>
+    </head>
+    <body style="opacity: 0;">
+        layouts/default.hbs
+        
+
+<div id="about">
+	<div class="container">
+		<h1>About Wes Wilke</h1>
+
+		<section id="bio">
+			I began my web endevor in college building the basic Hello World application to accompany my simple 3-page website.  I love the challenge that web provides and have an insatiable thirst for knowledge.  The dynamic nature of the industry has kept me on my toes and quickly turned homework into a hobby and finally into a career.  I love what I do and I'm eager for more!
+		</section>
+
+		<section id="musings">
+			Currently I'm exploring AngularJS, continuing to improve my CSS3 skills through the use of SASS (Compass), and loving the benefits derived from Grunt.
+		</section>
+
+		<section id="contact">
+			<a href="mailto:weswilke@gmail.com" class="btn contact">Say hi</a>
+		</section>
+	</div>
+</div>
+
+        <section id="header">
+	<div class="container">
+
+		<div class="header-info">
+			<a href="/">
+				<img src="images/wes-wilke.jpg" class="circle" />
+				<h1>Wes Wilke</h1>
+			</a>
+		</div>
+
+		<header>
+		    <h1></h1>
+		</header>
+	</div>
+</section>
+
+        <div class="container">
+	pages/projects.hbs
+	partials/projects
+<section id="projects">
+
+	<div id="pink-impact" class="project">
+	<h2>Pink Impact</h2>
+	projects.html
+	<h3>Gateway Church</h3>
+	<div class="project-info">
+		<a href="http://staging.2015.pinkimpact.com" class="project-thumb">
+			<img src="images/projects/pink-impact.jpg" align="right" />
+		</a>
+		This project is fully-responsive and has a few fun elements: 
+		SVG masking on the homepage text elements allows for a shining effect which responds to your mouse.  
+		SVG logos lend themselves to easy adjustments on Retina displays.  
+		Fun circles are randomly generated and animate when you hover over a biography thumbnail.  
+		The main navigation moves out of your way as your scroll down the page, but appears again when you decide to scroll back up.  
+		<br /><br />
+		This project also harnesses the power of Grunt to orchestrate copiliation and optimization behind the scenes.
+	</div>
+
+	<a href="http://staging.2015.pinkimpact.com" class="view-project">View Project &rarr;</a>
+
+	<div class="tags">
+	 	<a href="#">Responsive Web Design</a>
+	 	<a href="#">SASS/SCSS</a>
+	 	<a href="#">Drupal</a>
+	 	<a href="#">Grunt</a>
+	 	<a href="#">SVG</a>
+
+	</div>
+</div>
+	
+<div id="annual-report" class="project">
+	<h2>2013 Annual Report</h2>
+	<h3>Gateway Church</h3>
+	<div class="project-info">
+		<a href="http://annualreport.gatewaypeople.com" class="project-thumb">
+			<img src="images/projects/annual-report.jpg" align="right" />
+		</a>
+		The 2013 Annual Report was built to provide a responsive and interactive version of the previous year's desktop-only instance.  The intro page uses an SVG overlay on top of HTML5 video to provide the 'cutout' effect.  As you scroll down the page, elements will animate as they enter the window.  There are a number of CSS3 animations at work as well as a few jQuery plugins and custom scripts.  
+	</div>
+
+	<a href="http://annualreport.gatewaypeople.com" class="view-project">View Project &rarr;</a>
+
+	<div class="tags">
+		<a href="#">Responsive Web Design</a>
+	 	<a href="#">HTML5 Video</a>
+	 	<a href="#">CSS3</a>
+	 	<a href="#">CSS3 Animation</a>
+	 	<a href="#">SVG</a>
+	</div>
+</div>
+	
+<div id="annual-report" class="project">
+	<h2>Kaylee Rutland</h2>
+	<h3>Country Musician</h3>
+	<div class="project-info">
+		<a href="http://kayleerutland.com" class="project-thumb">
+			<img src="images/projects/kaylee.jpg" align="right" />
+		</a>
+		This site is in a CMS called Kentico which is .NET based.  It incorporates HTML5 audio and video as well as small CSS3 animations.  The desktop-only design 
+		was built to provide an immersive full-screen experience.  Notice the full-screen page transitions and subtle effects provided by the dotted swirls that dance as you move your mouse.
+	</div>
+
+	<a href="http://kayleerutland.com" class="view-project">View Project &rarr;</a>
+
+	<div class="tags">
+	 	<a href="#">Kentico</a>
+	 	<a href="#">HTML5 Video</a>
+	 	<a href="#">HTML5 Audio</a>
+	 	<a href="#">CSS3</a>
+	</div>
+</div>
+
+	<div class="clear"></div>
+</section>
+</div>
+
+        <footer></footer>
+        <!-- build:js js/vendor/jquery.js -->
+        <script src="bower_components/jquery/jquery.js"></script>
+        <!-- endbuild -->
+        <!-- build:js js/main.js -->
+        <script src="js/main.js"></script>
+        <!-- endbuild -->
+        <!-- build:js js/plugins.js -->
+        <script src="js/plugins.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

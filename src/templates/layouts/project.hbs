@@ -1,0 +1,22 @@
+---
+layout: default.hbs
+---
+<div id="{{id}}" class="project">
+    {{filename}}
+    <h2>{{title}}</h2>
+    <h3>{{client}}</h3>
+    <div class="project-info">
+        <a href="{{link}}" class="project-thumb">
+            <img src="images/projects/{{image}}" align="right" />
+        </a>
+        {{description}}
+    </div>
+
+    <a href="{{link}}" class="view-project">View Project &rarr;</a>
+
+    <div class="tags">
+        {{#each tags}}
+            <li><a href="#">{{.}}</a></li>
+        {{/each}}
+    </div>
+</div>

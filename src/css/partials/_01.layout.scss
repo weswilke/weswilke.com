@@ -1,0 +1,21 @@
+.container {
+	width: 90%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+section {
+	margin-bottom: 2em;
+}
+
+footer {
+	min-height: 4em;
+}
+
+.project {
+	margin-bottom: 4em;
+}
+
+.clearfix {
+	@include clearfix();
+}
